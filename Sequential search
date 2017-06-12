@@ -1,1 +1,11 @@
-
+def sequential_search(item_list, item):
+    position = 0
+    found=False
+    while(position < len(item_list) and not found):
+        if item == item_list[position]:
+           found = True
+        else:
+            position = position + 1
+        return found
+    
+print(sequential_search([1,2,3,5,8], 6))
